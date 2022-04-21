@@ -1,0 +1,32 @@
+@import '../global/global.scss';
+
+
+.footer {
+	position: relative;
+	background: white;
+	color:#515151;
+
+	.content {
+		padding:46px 50px;
+	}
+
+	.copyright {
+		text-transform: uppercase;
+		text-align: center;
+		width:100%;
+		font-size:12px;
+	}
+}
+
+
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+	.footer {
+		.content {
+			// Remove 20px (50px padding L/R - padding in each tile)
+			padding:60px 25px;
+		}
+	}
+}
