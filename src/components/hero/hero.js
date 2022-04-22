@@ -114,7 +114,7 @@ function Hero() {
                     </div>
                     <div className="hero-text c-width-50">
                         <h1 className="headerAnimate heroHeader">
-                            Introducing the Reppin NFT Pass
+                            Introducing the Reppin NFT Passssssss
                         </h1>
                         <p className="bodyAnimate heroBody">
                             The genesis NFT collection from Reppin Pins give access 
