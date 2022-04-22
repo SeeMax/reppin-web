@@ -28,7 +28,7 @@ function Hero() {
                 '.bodyAnimate', 
                 '.single-hero-highlight', 
                 '.single-social-logo',
-                '.heroButton',
+                '.seemax-button',
             ], { 
                 y: 0, 
                 rotationY:-45,
@@ -75,6 +75,7 @@ function Hero() {
         nothingTL.to('.nothingHeader', {y: 0, rotationY:0, rotationX:0, scale:1, opacity: 1},"nothingIn");
         nothingTL.to('.nothingBody', {y: 0, rotationY:0, rotationX:0, scale:1, opacity: 1},"nothingIn+=0.1");
         nothingTL.to('.nothingSpan', {y: 0, rotationY:0, rotationX:0, scale:1, opacity: 1},"nothingIn+=0.2");
+        nothingTL.to(".nothingButton", {y: 0, rotationY:0, rotationX:0, scale:1, opacity: 1, stagger: 0.05 },"nothingIn+=0.3");
         nothingTL.to('.nothingImage', {duration:1, ease:'none',opacity: 1},"nothingIn+=.3");
 
         let repTL = gsap.timeline({
@@ -116,10 +117,10 @@ function Hero() {
                             Introducing the Reppin NFT Pass
                         </h1>
                         <p className="bodyAnimate heroBody">
-                            Reppin NFT Passes grant access to the NFT Pin Collection 
-                            on ReppinPins.com. There are 4 types of the passes: GM, 
-                            HODL, WAGMI, and Probably nothing. Each pass also carries 
-                            these utilities:
+                            The genesis NFT collection from Reppin Pins give access 
+                            to the first NFT + Enamel Pin community. There are 4 
+                            types of the passes: GM, HODL, WAGMI, and Probably 
+                            nothing. All passes are utilized with:
                         </p>
                         <div className="hero-highlights">
                             <div className="single-hero-highlight c-width-50">
@@ -149,8 +150,8 @@ function Hero() {
                         
                             
                         </div>
-                        <a className="seemax-button heroButton" href="https://www.premint.xyz/filipinoadz-site-list-2/">
-                            <span>Buy On Open Sea</span>
+                        <a className="seemax-button heroButton" href="https://opensea.io/collection/reppin-nft-pass/" target="_blank" rel="noreferrer">
+                            <span>Buy On Opensea</span>
                         </a>
                     </div>
                 </div>
@@ -169,7 +170,10 @@ function Hero() {
                             pins for free*: <i>GM, HODL, WAGMI,</i> or <i>Probably Nothing</i>. 
                             These exclusive pins will carry utility at Reppin events and shows. 
                         </p>
-                        <span className="nothingSpan bodyAnimate">
+                        <a className="seemax-button nothingButton" href="https://reppinpins.com/collections/reppin-nft-pass-collection/" target="_blank" rel="noreferrer">
+                            <span>Claim free pin</span>
+                        </a>
+                        <span className="nothing-span nothingSpan bodyAnimate">
                             <i>*Shipping not included.</i>
                         </span>
                     </div>
@@ -181,20 +185,21 @@ function Hero() {
 
                     <p className="repBody repText bodyAnimate">
                         Since 2016, Reppin Pins has been making enamel pins that 
-                        <i>rep what you love</i>. Reppin Pins will be taking the lead in 
-                        creating collectible pins that rep the Web3 & NFT culture. 
+                        <i>rep what you love</i>. 
+                        Reppin Pins will be taking the lead in creating collectible 
+                        pins that rep the Web3 & NFT culture. 
                         Your NFT collection represents who you are and the 
-                        communities you&apos;re a part of, rep them proudly.<br />
-                        #repwhatyoulove #wagmi
+                        communities you&apos;re a part of.<br /> 
+                        #repwhatyouhodl
                     </p>
                     <div className="social-logos">
-                        <a className="single-social-logo" href="/">
+                        <a className="single-social-logo" href="https://twitter.com/reppinpins/" target="_blank" rel="noreferrer">
                             <img src={twLogo} alt="twitter logo"/>
                         </a>
-                        <a className="single-social-logo" href="/">
+                        <a className="single-social-logo" href="https://www.instagram.com/reppinpins/" target="_blank" rel="noreferrer">
                             <img src={igLogo} alt="Insta logo"/>
                         </a>
-                        <a className="single-social-logo" href="/">
+                        <a className="single-social-logo" href="https://discord.gg/J2Qga3MN" target="_blank" rel="noreferrer">
                             <img src={diLogo} alt="Discord logo"/>
                         </a>
                     </div>

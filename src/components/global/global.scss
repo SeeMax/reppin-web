@@ -198,7 +198,7 @@ blockquote {
 	background-color: $blue;
 	padding:16px 25px;
 	transition:background-color .3s ease;
-	color:black;
+	color:white;
 	font-weight:800;
 	overflow: hidden;
 	cursor:pointer;
@@ -206,7 +206,6 @@ blockquote {
 	font-size:16px;
 
 	&:hover {
-		color:$black;
 		background-color: $hoverBlue;
 	}
 
